@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Practice</title>
+</head>
+<body style="text-align: center;">
+	<h1 id="mainTitle">Change This!</h1>
+	<p style="width: 80%; margin-left:auto; margin-right:auto;">The Document Object Model (DOM) is a programming interface for web documents. It represents the web page so that written programs can change the document structure, style, and content. The DOM represents the document as nodes and objects, which can be manipulated with programming languages like JavaScript.</p>
+	<br/>
+	<br/>
+	<h2 id="bottom"></h2>
+	<h3>Change this also</h3>
+	<script>
+		let name = "Dominick Vera";   //(1)
+
+		// JavaScript code can manipulate the DOM here
+		document.getElementById("mainTitle").textContent = "Chapter 10 Practice" ;
+		document.getElementsByTagName("h3")[0].innerHTML = "JavaScript Changed This <br/> And I made it happen!" ;
+		document.getElementById("bottom").innerHTML = addHeading(name);   //(2)
+
+		// Definition of the addHeading() function 
+		function addHeading(person) {
+			return "Greetings " + person + "!!";   //(3)
+		}
+
+	</script>
+</body>
+</html>
